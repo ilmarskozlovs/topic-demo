@@ -1,4 +1,4 @@
-package com.mycompany.topicdemo;
+package com.mycompany.topicdemo.repository;
 
 import com.mycompany.topicdemo.model.Topic;
 import com.mycompany.topicdemo.repository.TopicRepository;

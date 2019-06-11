@@ -1,6 +1,8 @@
-package com.mycompany.topicdemo;
+package com.mycompany.topicdemo.controller;
 
+import com.mycompany.topicdemo.TopicDemoApplication;
 import com.mycompany.topicdemo.controller.TopicController;
+import com.mycompany.topicdemo.dto.TopicDTO;
 import com.mycompany.topicdemo.model.Topic;
 import com.mycompany.topicdemo.service.TopicService;
 import org.junit.Before;
@@ -55,9 +57,12 @@ public class TopicControllerTest {
 
     @Test
     public void testTopicControllerGetAllTopics() throws Exception{
-        Topic topic = new Topic("aaa", "bbb", "ccc");
+        TopicDTO topic = new TopicDTO();
+        topic.setTopicName("aaa");
+        topic.setTopicUrl("bbb");
+        topic.setDescription("ccc");
 
-        List<Topic> topicList = Arrays.asList(topic);
+        List<TopicDTO> topicList = Arrays.asList(topic);
 
         when(topicService.findAll()).thenReturn(topicList);
 

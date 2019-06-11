@@ -1,4 +1,4 @@
-package com.mycompany.topicdemo;
+package com.mycompany.topicdemo.model;
 
 import com.mycompany.topicdemo.model.Topic;
 

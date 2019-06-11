@@ -1,5 +1,6 @@
 package com.mycompany.topicdemo.controller;
 
+import com.mycompany.topicdemo.dto.TopicDTO;
 import com.mycompany.topicdemo.model.Topic;
 import com.mycompany.topicdemo.service.TopicService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +18,7 @@ public class TopicController {
     private TopicService topicService;
 
     @GetMapping("/all")
-    public List<Topic> getAllTopics(){
+    public List<TopicDTO> getAllTopics(){
         return topicService.findAll();
     }
 }
