@@ -9,4 +9,10 @@ public interface TopicService {
 
     List<TopicDTO> findAll();
 
+    TopicDTO getTopicById(Long id);
+
+    TopicDTO saveTopic(TopicDTO topicDTO);
+
+    void deleteTopicById(Long id);
+
 }
