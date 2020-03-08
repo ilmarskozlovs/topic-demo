@@ -45,7 +45,6 @@ public class TopicDemoApplication {
 			topicRepository.findAll().forEach(c -> {
 				log.info("Topic: {}", c);
 			});
-			topicRepository.toString();
 		});
 		}
 }
