@@ -24,6 +24,8 @@ public class TopicDemoApplication {
 			topicRepository.save(new Topic("java", "oracle.com", "topic for java"));
 			topicRepository.save(new Topic("python", "python.com", "learning site for python"));
 			topicRepository.save(new Topic("php", "php.de", "php website"));
+			topicRepository.save(new Topic("php1", "php.de", "php website"));
+			topicRepository.save(new Topic("php2", "php.de", "php website"));
 
 			topicRepository.findAll().forEach(c -> {
 				log.info("Topic: {}", c);
